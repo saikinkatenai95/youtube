@@ -7,5 +7,5 @@
 | thumbnail           | string    | null: false                |
 | title               | string    | null: false                |
 | channel             | string    | null: false                |
-| detail              | string    |                            |
+| detail              | text      |                            |
 
