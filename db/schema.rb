@@ -15,9 +15,9 @@ ActiveRecord::Schema.define(version: 2021_11_02_064720) do
   create_table "videos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "thumbnail", null: false
-    t.string "title", null: false
-    t.string "channel", null: false
+    t.string "thumbnail", default: "", null: false
+    t.string "title", default: "", null: false
+    t.string "channel", default: "", null: false
     t.text "detail"
   end
 

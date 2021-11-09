@@ -28,4 +28,4 @@ def find_videos(keyword, after: 1.months.ago, before: Time.now)
   end while next_page_token.present?
 end
 
-find_videos('グロー')
+find_videos('APEX')
