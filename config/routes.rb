@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'youtubes/index'
-    root to: "youtubes#index"
+  root to: "videos#index"
+  get 'videos/index'
 end
