@@ -1,3 +1,36 @@
 // Place all the styles related to the videos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wrapper{
+  width: auto;
+  height: 1200px;
+  background-color: #ede9df;
+}
+
+.video-space{
+  width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video-box{
+  margin: 20px;
+  width: 600px;
+}
+
+.video{
+  // width: 500px;
+}
+
+.searchbox{
+  width: 1200px;
+  margin: 20px 0px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
