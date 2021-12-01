@@ -14,7 +14,7 @@ def find_video(keyword, after: 1.months.ago, before: Time.now)
   opt = {
     q: keyword,
     type: 'video',
-    max_results: 12,
+    max_results: 8,
     order: :date,
     page_token: next_page_token,
     published_after: after.iso8601,
@@ -25,7 +25,7 @@ def find_video(keyword, after: 1.months.ago, before: Time.now)
 end
 
   def index
-    @youtube_data = find_video('APEX')
+    @youtube_data = find_video('ゲーム')
   end
 
   def search
