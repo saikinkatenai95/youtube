@@ -1,0 +1,20 @@
+<div class=wrapper>
+  <input class="searchbox" type="text" maxlength="50" name="s" placeholder="動画検索">
+  <button class="searchbox_submit" type="submit" value="search">
+    click
+  </button>
+<div class=video-space>
+<% @youtube_data.items.each do |item| %>
+  <div class=video-box>
+    <div class=video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= item.id.video_id %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <% snippet = item.snippet %>
+    <p><%= snippet.published_at %></p>
+    <a class="video_url" href="https://www.youtube.com/watch?v=<%= item.id.video_id %>" target="_blank" ><%= snippet.title %></a>
+    <p><%= snippet.channel_title %></p>
+    <p><%= snippet.description %></p>
+  </div>
+<% end %>
+</div>
+</div>

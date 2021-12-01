@@ -4,8 +4,12 @@
 
 .wrapper{
   width: auto;
-  height: 1200px;
   background-color: #ede9df;
+}
+
+.searchbox{
+  width: 1200px;
+  margin: 20px 20px 0px 20px;
 }
 
 .video-space{
@@ -19,14 +23,6 @@
   width: 600px;
 }
 
-.video{
-  // width: 500px;
-}
-
-.searchbox{
-  width: 1200px;
-  margin: 20px 0px;
-}
 
 a{
   text-decoration: none;
