@@ -11,7 +11,7 @@
     </div>
     <% snippet = item.snippet %>
     <p><%= snippet.published_at %></p>
-    <a class="video_url" href="https://www.youtube.com/watch?v=<%= item.id.video_id %>"><%= snippet.title %></a>
+    <a class="video_url" href="https://www.youtube.com/watch?v=<%= item.id.video_id %>" target="_blank" ><%= snippet.title %></a>
     <p><%= snippet.channel_title %></p>
     <p><%= snippet.description %></p>
   </div>
