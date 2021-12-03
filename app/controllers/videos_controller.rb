@@ -25,11 +25,15 @@ def find_video(keyword, after: 1.months.ago, before: Time.now)
 end
 
   def index
-    @youtube_data = find_video('千葉')
+    @youtube_data = find_video(params[:firstword])
+  end
+
+  def new
   end
 
   def create
-    @youtube_data = find_video(params[:word])
+    Video.create(firstword: params[:firstword])
+    redirect_to videos_path(params[:firstword])
   end
   
 end

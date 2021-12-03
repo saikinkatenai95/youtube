@@ -13,11 +13,8 @@
 ActiveRecord::Schema.define(version: 2021_11_02_064720) do
 
   create_table "videos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "video_name", default: "", null: false
-    t.string "video_image", default: "", null: false
-    t.string "video_url", default: "", null: false
-    t.string "video_channel", default: "", null: false
-    t.string "video_description", default: "", null: false
+    t.string "firstword", null: false
+    t.string "secondword"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
