@@ -25,11 +25,11 @@ def find_video(keyword, after: 1.months.ago, before: Time.now)
 end
 
   def index
-    @youtube_data = find_video('ゲーム')
+    @youtube_data = find_video('千葉')
   end
 
-  def search
-    @youtube_data = find_video('APEX')
+  def create
+    @youtube_data = find_video(params[:word])
   end
   
 end

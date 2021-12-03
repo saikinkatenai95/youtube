@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root to: "videos#index"
-  get 'videos/index'
+  root to: "seeks#index"
 
-  resources :videos, only: :index
+  resources :seeks, only: [:index, :new, :create]
+  resources :videos, only: [:index, :new, :create]
 end

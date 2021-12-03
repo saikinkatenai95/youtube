@@ -1,0 +1,6 @@
+<div class=wrapper>
+  <%= form_with url: videos_path, class: "form", local: true do |f| %>
+    <%= f.text_field :word, class: "searchbox", placeholder: "動画検索" %>
+    <%= f.submit "検索", class: "searchbox-submit" %>
+  <% end %>
+</div>
