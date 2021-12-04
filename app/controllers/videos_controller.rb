@@ -25,15 +25,21 @@ def find_video(keyword, after: 1.months.ago, before: Time.now)
 end
 
   def index
-    @youtube_data = find_video(params[:firstword])
+    @youtube_data = find_video(params[:video][:firstword])
   end
 
   def new
   end
 
   def create
-    Video.create(firstword: params[:firstword])
-    redirect_to videos_path(params[:firstword])
+    Video.create(video_params)
+    redirect_to videos_path(params[:video][:firstword])
+  end
+
+  private
+
+  def video_params
+    params.require(:video).permit(:firstword,:secondword)
   end
   
 end
