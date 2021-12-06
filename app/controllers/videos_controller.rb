@@ -25,21 +25,25 @@ def find_video(keyword, after: 1.months.ago, before: Time.now)
 end
 
   def index
-    @youtube_data = find_video(params[:video][:firstword])
+    @videos = Video.order(updated_at: :desc).limit(1)
+    @youtube_data = find_video('APEX')
   end
 
   def new
+    @video = Video.new
   end
-
+  
   def create
-    Video.create(video_params)
-    redirect_to videos_path(params[:video][:firstword])
+    @video = Video.new(video_params)
+    if @video.save
+      redirect_to action: :index
+    end
   end
 
   private
 
   def video_params
-    params.require(:video).permit(:firstword,:secondword)
+    params.require(:video).permit!
   end
   
 end
