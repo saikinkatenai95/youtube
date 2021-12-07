@@ -7,10 +7,23 @@
   background-color: #ede9df;
 }
 
+.form-space{
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.form{
+  height: 200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
 .searchbox{
   width: 1200px;
   margin: 20px 20px 0px 20px;
 }
+
 
 .video-space{
   width: 1400px;

@@ -2,6 +2,7 @@ class VideosController < ApplicationController
 
 require 'google/apis/youtube_v3'
 require 'active_support/all'
+helper_method :find_video
 
 GOOGLE_API_KEY=ENV["YOUTUBE_SECRET_KEY"]
 
@@ -26,7 +27,6 @@ end
 
   def index
     @videos = Video.order(updated_at: :desc).limit(1)
-    @youtube_data = find_video('APEX')
   end
 
   def new
@@ -39,6 +39,7 @@ end
       redirect_to action: :index
     end
   end
+
 
   private
 

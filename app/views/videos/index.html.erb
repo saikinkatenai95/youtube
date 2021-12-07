@@ -1,3 +1,12 @@
+<% firstword = "" %>
+<% secondword = "" %>
+<% @videos.each do |word| %>
+<% firstword = word.firstword %>
+<% secondword = word.secondword %>
+<% end %>
+<% keyword = "#{firstword} #{secondword}"%>
+<% @youtube_data= find_video(keyword)%>
+
 <div class=wrapper>
   <input class="searchbox" type="text" maxlength="50" name="s" placeholder="動画検索">
   <button class="searchbox_submit" type="submit" value="search">
