@@ -4,6 +4,7 @@ class CreateVideos < ActiveRecord::Migration[6.0]
 
       t.string      :firstword,           null: false
       t.string      :secondword
+      t.integer     :choice_id,           null: false
       t.timestamps
     end
   end
