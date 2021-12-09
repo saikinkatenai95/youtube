@@ -1,11 +1,24 @@
 <% firstword = "" %>
 <% secondword = "" %>
+<% choice_id = "" %>
 <% @videos.each do |word| %>
 <% firstword = word.firstword %>
 <% secondword = word.secondword %>
+<% choice_id = word.choice_id%>
 <% end %>
-<% keyword = "#{firstword} #{secondword}"%>
-<% @youtube_data= find_video(keyword)%>
+<% if choice_id == 1 %>
+  <% keyword = "#{firstword} #{secondword}"%>
+  <% @youtube_data= find_video(keyword)%>
+<% elsif choice_id ==  2 %>
+  <% keyword = "#{firstword} -#{secondword}"%>
+  <% @youtube_data= find_video(keyword)%>
+<% elsif choice_id == 3 %>
+  <% keyword = "#{firstword} | #{secondword}"%>
+  <% @youtube_data= find_video(keyword)%>
+<%elsif choice_id == 4 %>
+  <% keyword = "intitle:#{firstword} #{secondword}"%>
+  <% @youtube_data= find_video(keyword)%>
+<% end %>
 
 <div class=wrapper>
   <input class="searchbox" type="text" maxlength="50" name="s" placeholder="動画検索">

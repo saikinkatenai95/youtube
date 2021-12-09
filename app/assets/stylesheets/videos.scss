@@ -4,19 +4,20 @@
 
 .wrapper{
   width: auto;
+  height: 3000px;
   background-color: #ede9df;
 }
 
 .form-space{
-  height: 600px;
+  height: 800px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
 }
 
 .form{
   height: 200px;
   margin: 0 auto;
-  align-items: center;
 }
 
 .searchbox{
