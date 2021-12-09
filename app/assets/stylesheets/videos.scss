@@ -23,7 +23,25 @@
 .searchbox{
   width: 1200px;
   margin: 20px 20px 0px 20px;
+  border: 1px solid #999;
+  padding: 3px 5px;
+  border-radius: 20px;
+  overflow: hidden;
+  font-family: FontAwesome;
 }
+
+.searchbox-submit{
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.3em;
+  border: none;
+  background: none;
+  color: #3879D9;
+  outline : none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 
 .video-space{
@@ -44,3 +62,4 @@ a{
   font-weight: 600;
   font-size: 1.4rem;
 }
+

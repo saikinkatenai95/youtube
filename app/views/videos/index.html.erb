@@ -2,9 +2,9 @@
 <% secondword = "" %>
 <% choice_id = "" %>
 <% @videos.each do |word| %>
-<% firstword = word.firstword %>
-<% secondword = word.secondword %>
-<% choice_id = word.choice_id%>
+  <% firstword = word.firstword %>
+  <% secondword = word.secondword %>
+  <% choice_id = word.choice_id %>
 <% end %>
 <% if choice_id == 1 %>
   <% keyword = "#{firstword} #{secondword}"%>
