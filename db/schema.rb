@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2021_11_02_064720) do
     t.string "firstword", null: false
     t.string "secondword"
     t.integer "choice_id", null: false
+    t.integer "result", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

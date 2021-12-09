@@ -1,23 +1,42 @@
 <% firstword = "" %>
 <% secondword = "" %>
 <% choice_id = "" %>
+<% result = "" %>
 <% @videos.each do |word| %>
   <% firstword = word.firstword %>
   <% secondword = word.secondword %>
   <% choice_id = word.choice_id %>
+  <% result = word.result %>
 <% end %>
-<% if choice_id == 1 %>
-  <% keyword = "#{firstword} #{secondword}"%>
-  <% @youtube_data= find_video(keyword)%>
-<% elsif choice_id ==  2 %>
-  <% keyword = "#{firstword} -#{secondword}"%>
-  <% @youtube_data= find_video(keyword)%>
-<% elsif choice_id == 3 %>
-  <% keyword = "#{firstword} | #{secondword}"%>
-  <% @youtube_data= find_video(keyword)%>
-<%elsif choice_id == 4 %>
-  <% keyword = "intitle:#{firstword} #{secondword}"%>
-  <% @youtube_data= find_video(keyword)%>
+
+<% if result == 24 %>
+  <% if choice_id == 1 %>
+    <% keyword = "#{firstword} #{secondword}"%>
+    <% @youtube_data= find_video(keyword)%>
+  <% elsif choice_id ==  2 %>
+    <% keyword = "#{firstword} -#{secondword}"%>
+    <% @youtube_data= find_video(keyword)%>
+  <% elsif choice_id == 3 %>
+    <% keyword = "#{firstword} | #{secondword}"%>
+    <% @youtube_data= find_video(keyword)%>
+  <%elsif choice_id == 4 %>
+    <% keyword = "intitle:#{firstword} #{secondword}"%>
+    <% @youtube_data= find_video(keyword)%>
+  <% end %>
+<% elsif result == 48 %>
+  <% if choice_id == 1 %>
+    <% keyword = "#{firstword} #{secondword}"%>
+    <% @youtube_data= search_video(keyword)%>
+  <% elsif choice_id ==  2 %>
+    <% keyword = "#{firstword} -#{secondword}"%>
+    <% @youtube_data= search_video(keyword)%>
+  <% elsif choice_id == 3 %>
+    <% keyword = "#{firstword} | #{secondword}"%>
+    <% @youtube_data= search_video(keyword)%>
+  <%elsif choice_id == 4 %>
+    <% keyword = "intitle:#{firstword} #{secondword}"%>
+    <% @youtube_data= search_video(keyword)%>
+  <% end %>
 <% end %>
 
 <div class=wrapper>
