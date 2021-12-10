@@ -44,7 +44,7 @@
   <button class="searchbox_submit" type="submit" value="search">
     click
   </button>
-  <div class=video-space>
+  <div class=main-wrapper>
     <% @youtube_data.items.each do |item| %>
       <div class=video-box>
         <div class=video>
@@ -57,5 +57,16 @@
         <p><%= snippet.description %></p>
       </div>
     <% end %>
+  </div>
+  <div class=sub-wrapper>
+    <div class=v-space>
+    </div>
+    <div class=category>
+      <ul class=list>
+        <li class=categorylist>
+          VALORANT
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
