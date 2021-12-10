@@ -4,8 +4,8 @@
 
 .wrapper{
   width: auto;
-  height: 3000px;
   background-color: #ede9df;
+  display: flex;
 }
 
 .form-space{
@@ -45,7 +45,7 @@
 
 
 .main-wrapper{
-  width: 1400px;
+  width: 1300px;
   display: flex;
   flex-wrap: wrap;
 }
