@@ -39,53 +39,58 @@
   <% end %>
 <% end %>
 
-<div class=wrapper>
-  <div class=main-wrapper>
-    <% @youtube_data.items.each do |item| %>
-      <div class=video-box>
-        <div class=video>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= item.id.video_id %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <% snippet = item.snippet %>
-        <p><%= snippet.published_at %></p>
-        <a class="video_url" href="https://www.youtube.com/watch?v=<%= item.id.video_id %>" target="_blank" ><%= snippet.title %></a>
-        <p><%= snippet.channel_title %></p>
-        <p><%= snippet.description %></p>
-      </div>
-    <% end %>
+<div class=video-page>
+  <div class=header>
+    <%= link_to image_tag("FilTube-logo02.png", class:"new-logo"),"/"%>
   </div>
-  <div class=sub-wrapper>
-    <div class=v-space>
-    広告スペース
+  <div class=wrapper>
+    <div class=main-wrapper>
+      <% @youtube_data.items.each do |item| %>
+        <div class=video-box>
+          <div class=video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= item.id.video_id %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <% snippet = item.snippet %>
+          <p><%= snippet.published_at %></p>
+          <a class="video_url" href="https://www.youtube.com/watch?v=<%= item.id.video_id %>" target="_blank" ><%= snippet.title %></a>
+          <p><%= snippet.channel_title %></p>
+          <p><%= snippet.description %></p>
+        </div>
+      <% end %>
     </div>
-    <div class=category>
-      <ul class=list>
-        <li class=categorylist>
-          <%= link_to 'VALORANT', "/videos"  %>
-          VALORANT
-        </li>
-        <li class=categorylist>
-          APEX LEGENDS
-        </li>
-        <li class=categorylist>
-          パズル＆ドラゴンズ
-        </li>
-        <li class=categorylist>
-          モンスターストライク
-        </li>
-        <li class=categorylist>
-          battlefield 2042
-        </li>
-        <li class=categorylist>
-          HALO
-        </li>
-        <li class=categorylist>
-          Among us
-        </li>
-        <li class=categorylist>
-          Phasmo Fobia
-        </li>
-      </ul>
+    <div class=sub-wrapper>
+      <div class=v-space>
+      広告スペース
+      </div>
+      <div class=category>
+        <ul class=list>
+          <li class=categorylist>
+            <%= link_to 'VALORANT', "/videos"  %>
+            VALORANT
+          </li>
+          <li class=categorylist>
+            APEX LEGENDS
+          </li>
+          <li class=categorylist>
+            パズル＆ドラゴンズ
+          </li>
+          <li class=categorylist>
+            モンスターストライク
+          </li>
+          <li class=categorylist>
+            battlefield 2042
+          </li>
+          <li class=categorylist>
+            HALO
+          </li>
+          <li class=categorylist>
+            Among us
+          </li>
+          <li class=categorylist>
+            Phasmo Fobia
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

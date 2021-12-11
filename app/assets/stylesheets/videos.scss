@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.video-page{
+  width: auto;
+  background-color: #ede9df;
+}
+
 .wrapper{
   width: auto;
   background-color: #ede9df;
@@ -9,7 +14,7 @@
 }
 
 .form-space{
-  height: 800px;
+  height: 300px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -21,7 +26,7 @@
 }
 
 .searchbox{
-  width: 1200px;
+  width: 1000px;
   margin: 20px 20px 0px 20px;
   border: 1px solid #999;
   padding: 3px 5px;
