@@ -52,7 +52,7 @@
 
 .video-box{
   margin: 20px;
-  width: 600px;
+  width: 550px;
 }
 
 
@@ -61,6 +61,19 @@ a{
   color: inherit;
   font-weight: 600;
   font-size: 1.4rem;
+}
+
+.v-space{
+  margin: 20px 0px;
+  height: 400px;
+}
+
+.category{
+  margin-left: 20px;
+}
+
+.list{
+  list-style: none;
 }
 
 .categorylist{
