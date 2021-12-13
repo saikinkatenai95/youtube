@@ -1,0 +1,86 @@
+// Place all the styles related to the videos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.video-page{
+  width: auto;
+  background-color: #ede9df;
+}
+
+.wrapper{
+  width: auto;
+  background-color: #ede9df;
+  display: flex;
+}
+
+.form-space{
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.form{
+  height: 200px;
+  margin: 0 auto;
+}
+
+.searchbox{
+  width: 1000px;
+  margin: 20px 20px 0px 20px;
+  border: 1px solid #999;
+  padding: 3px 5px;
+  border-radius: 20px;
+  overflow: hidden;
+  font-family: FontAwesome;
+}
+
+.searchbox-submit{
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.3em;
+  border: none;
+  background: none;
+  color: #3879D9;
+  outline : none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+.main-wrapper{
+  width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video-box{
+  margin: 20px;
+  width: 550px;
+}
+
+
+a{
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.v-space{
+  margin: 20px 0px;
+  height: 400px;
+}
+
+.category{
+  margin-left: 20px;
+}
+
+.list{
+  list-style: none;
+}
+
+.categorylist{
+  list-style: none;
+}
