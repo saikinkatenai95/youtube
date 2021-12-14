@@ -1,20 +1,50 @@
 // Place all the styles related to the videos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.logo{
+  height: 300px;
+  margin-bottom: -30px;
+}
+
+.logo-box{
+  width: 600px;
+  margin: 0 auto;
+}
+
+.new-logo{
+  width: 200px;
+  margin: 160px 0px 0px 160px;
+}
+
+.header{
+  height: 100px;
+}
+
+.image-logo{
+  width: 100px;
+  height: 100px;
+}
+
+.header-logo{
+  margin: 10px 0px 0px 20px;
+  width: 100%;
+  height: 100%;
+}
+
 
 .video-page{
   width: auto;
-  background-color: #ede9df;
+  background-color: #fffdf7;
 }
 
 .wrapper{
   width: auto;
-  background-color: #ede9df;
+  background-color: #fffdf7;
   display: flex;
 }
 
 .form-space{
-  height: 300px;
+  height: 500px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -22,6 +52,7 @@
 
 .form{
   height: 200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -84,3 +115,4 @@ a{
 .categorylist{
   list-style: none;
 }
+

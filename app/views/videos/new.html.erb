@@ -1,15 +1,19 @@
 <div class=video-page>
-  <div class=logo>
-    <%= link_to image_tag("FilTube-logo01.png", class:"new-logo"),"/"%>
+  <div class=logo-space>
+    <div class=logo>
+      <div class=logo-box>
+        <%= link_to image_tag("FilTube-logo02.png", class:"new-logo"),"/"%>
+      </div>
+    </div>
   </div>
   <div class=form-space>
     <%= form_with model: @video, method: :post, class: "form", local: true do |f| %>
       <%# <%= render 'layouts/error_messages', model: f.object %>
       <%= f.text_field :firstword, class: "searchbox", placeholder: "第一検索キーワード" %>
       <%= f.text_field :secondword, class: "searchbox", placeholder: "第二検索キーワード" %>
-      <%= f.collection_select(:choice_id, Choice.all, :id, :name, {}, {class:"video-select"}) %>
+      <%= f.collection_select(:choice_id, Choice.all, :id, :name, {}, {class:"video-select"}) %><br><br>
       <%= f.radio_button :result, '24', checked: true %>24件
-      <%= f.radio_button :result, '48' %>48件
+      <%= f.radio_button :result, '48' %>48件<br>
       <%= f.submit "search", class: "searchbox-submit" %>
     <% end %>
   </div>
