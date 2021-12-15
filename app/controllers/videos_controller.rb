@@ -13,16 +13,17 @@ def find_video(keyword, after: 1.months.ago, before: Time.now)
   next_page_token = nil
   
   begin
-  opt = {
-    q: keyword,
-    type: 'video',
-    max_results: 8,
-    order: :viewCount,
-    page_token: next_page_token,
-    published_after: after.iso8601,
-    published_before: before.iso8601
-  }
-    service.list_searches(:snippet, opt)
+    opt = {
+      q: keyword,
+      type: 'video',
+      max_results: 8,
+      order: :viewCount,
+      page_token: next_page_token,
+      published_after: after.iso8601,
+      published_before: before.iso8601
+    }
+      service.list_searches(:snippet, opt)
+
   end
 end
 
@@ -67,8 +68,7 @@ end
     params.require(:video).permit!
   end
   
-  def set_api
-
+  def set_api(keyword)
 
 
   end
