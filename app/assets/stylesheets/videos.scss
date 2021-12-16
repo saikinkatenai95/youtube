@@ -69,12 +69,16 @@
 
 .form{
   height: 200px;
-  width: 1200px;
+  width: 800px;
   margin: 0 auto;
 }
 
+.first-form-box{
+  display: flex;
+}
+
 .searchbox{
-  width: 1000px;
+  width: 500px;
   margin: 20px 20px 0px 20px;
   border: 1px solid #999;
   padding: 3px 5px;
