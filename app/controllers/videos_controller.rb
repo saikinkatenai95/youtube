@@ -16,7 +16,7 @@ def find_video(keyword, after: 1.months.ago, before: Time.now)
     opt = {
       q: keyword,
       type: 'video',
-      max_results: 8,
+      max_results: 24,
       order: :viewCount,
       page_token: next_page_token,
       published_after: after.iso8601,
@@ -36,7 +36,7 @@ def search_video(keyword, after: 1.months.ago, before: Time.now)
   opt = {
     q: keyword,
     type: 'video',
-    max_results: 16,
+    max_results: 48,
     order: :rating,
     page_token: next_page_token,
     published_after: after.iso8601,

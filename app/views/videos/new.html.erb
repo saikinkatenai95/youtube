@@ -13,10 +13,11 @@
       <div class=first-form>
         <%= f.text_field :firstword, class: "searchbox", placeholder: "第一検索キーワード" %>
         <%= f.submit "search", class: "searchbox-submit" %>
+        <img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png">
       </div>
     </div>
       <div class="button-space">
-        <button type="button" id="switch_btn">切り替えボタン</button>
+        <span><button type="button" id="switch_btn"></button></span>
       </div>
         <div id=sub_search style="display: none; ">
           <%= f.text_field :secondword, class: "searchbox", placeholder: "第二検索キーワード" %>
