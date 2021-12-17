@@ -14,8 +14,10 @@
         <%= f.text_field :firstword, class: "searchbox", placeholder: "第一検索キーワード" %>
         <%= f.submit "search", class: "searchbox-submit" %>
       </div>
-        <button type="button" id="switch_btn">切り替えボタン</button>
     </div>
+      <div class="button-space">
+        <button type="button" id="switch_btn">切り替えボタン</button>
+      </div>
         <div id=sub_search style="display: none; ">
           <%= f.text_field :secondword, class: "searchbox", placeholder: "第二検索キーワード" %>
           <%= f.collection_select(:choice_id, Choice.all, :id, :name, {}, {class:"video-select"}) %><br><br>

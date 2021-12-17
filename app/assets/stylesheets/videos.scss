@@ -43,6 +43,11 @@
   height: 90%;
 }
 
+.sub-search-box{
+  display: flex;
+  margin-top: 10px;
+}
+
 .search-bar{
   backdrop-filter: saturate(180%) blur(20px);
   width: 17%;
@@ -75,6 +80,11 @@
 
 .first-form-box{
   display: flex;
+}
+
+.button-space{
+  width: 800px;
+  margin:20px 0px 0px 250px
 }
 
 .searchbox{
