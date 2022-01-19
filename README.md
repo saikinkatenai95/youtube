@@ -24,7 +24,7 @@ Youtubeの設計上、関連動画は避けて通れないものになってお�
 Ruby 2.6.5<br>
 Ruby on Rails 6.0.0<br>
 Youtube data v3 API<br>
-MYSQL2 5.7<br>
+MYSQL 5.7<br>
 
 
 
@@ -44,3 +44,6 @@ MYSQL2 5.7<br>
 | choice_id           | integer   | null: false                |
 | result              | integer   | null: false                |
 
+
+# OTHER
+Daisuke Sato / 佐藤 大輔
