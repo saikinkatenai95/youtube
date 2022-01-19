@@ -46,4 +46,4 @@ MYSQL 5.7<br>
 
 
 # OTHER
-Daisuke Sato / 佐藤 大輔
+Daisuke Sato / 佐藤 大輔.
