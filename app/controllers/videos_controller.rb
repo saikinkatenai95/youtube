@@ -7,7 +7,7 @@ helper_method :search_video
 
 GOOGLE_API_KEY=ENV["YOUTUBE_SECRET_KEY"]
 
-def find_video(keyword, after: 1.months.ago, before: Time.now)
+def find_video(keyword, after: 5.years.ago, before: Time.now)
   service = Google::Apis::YoutubeV3::YouTubeService.new
   service.key = GOOGLE_API_KEY
   next_page_token = nil
@@ -27,7 +27,7 @@ def find_video(keyword, after: 1.months.ago, before: Time.now)
   end
 end
 
-def search_video(keyword, after: 1.months.ago, before: Time.now)
+def search_video(keyword, after: 5.years.ago, before: Time.now)
   service = Google::Apis::YoutubeV3::YouTubeService.new
   service.key = GOOGLE_API_KEY
 
@@ -37,7 +37,7 @@ def search_video(keyword, after: 1.months.ago, before: Time.now)
     q: keyword,
     type: 'video',
     max_results: 48,
-    order: :rating,
+    order: :viewCount,
     page_token: next_page_token,
     published_after: after.iso8601,
     published_before: before.iso8601
