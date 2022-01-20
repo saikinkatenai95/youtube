@@ -9,13 +9,20 @@ FIlTubeの特徴は、関連動画を一切見せないことにより、<br>
 # DEMO
 
 # 通常検索
-通常検索はgoogleの検索バーと同様にシンプルにYoutube動画が検索ができるようになっています。
+通常検索はgoogleの検索バーと同様にシンプルにYoutube動画が検索ができるようになっています。<br>
+
 <a href="https://gyazo.com/76babefd601aa1dc2cd60de9c6519812"><img src="https://i.gyazo.com/76babefd601aa1dc2cd60de9c6519812.gif" alt="Image from Gyazo" width="1000"/></a>
 
 # より高度な検索
-Filterをかけることでより精密かつ高度な検索ができるようになります。
+Filterをかけることでより精密かつ高度な検索ができるようになります。<br>
 
-<a href="https://gyazo.com/75c681b0d1567da5f907f6bc17704418"><img src="https://i.gyazo.com/75c681b0d1567da5f907f6bc17704418.gif" alt="Image from Gyazo" width="1000"/></a>
+<a href="https://gyazo.com/e54cf5753e4e046d37edb8aa6adbdff9"><img src="https://i.gyazo.com/e54cf5753e4e046d37edb8aa6adbdff9.gif" alt="Image from Gyazo" width="1000"/></a>
+
+
+# 検索結果
+
+<a href="https://gyazo.com/c25dd14296788730082e4e8a9c3f3cb3"><img src="https://i.gyazo.com/c25dd14296788730082e4e8a9c3f3cb3.gif" alt="Image from Gyazo" width="1000"/></a>
+
 
 
 
